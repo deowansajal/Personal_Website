@@ -351,6 +351,10 @@ p {
 
 /* Medium Device Start */
 @media (max-width: 768px) {
+	.active:before {
+		display: none !important;
+	}
+
 	h1 {
 		font-size: 2.5rem !important;
 	}
