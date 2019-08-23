@@ -1,0 +1,486 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:300,400,500,600,700&display=swap");
+
+/* Global ***************************************** Start */
+
+body {
+	font-family: "Montserrat", sans-serif !important;
+	overflow-x: hidden;
+	height: 100vh;
+	background: #fff !important;
+}
+
+h1 {
+	font-weight: 600 !important;
+	font-size: 3.5rem !important;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+h4 {
+	color: #555555;
+	font-size: 1rem;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+img {
+	width: 100%;
+}
+p {
+	font-size: 1rem !important;
+}
+.profile-image,
+.portfolio .img,
+.home,
+.about-image,
+.testimonial,
+.popup-img {
+	background-size: cover !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+}
+
+/* Global ********************************** End */
+
+/* Navbar Start*/
+.navbar-brand {
+	font-size: 2.5rem;
+}
+.active {
+	position: relative;
+}
+
+.active:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background: #17a2b8;
+	bottom: 0;
+	left: 0;
+	opacity: 1 !important;
+}
+
+.close span {
+	font-size: 2rem;
+	position: absolute;
+	right: 0;
+}
+
+.nav-link {
+	position: relative;
+}
+
+.nav-link:before {
+	content: "";
+	position: absolute;
+	height: 3px;
+	bottom: 0;
+	background: #17a2b8;
+	transition: opacity ease-out 300ms;
+	width: 100%;
+	left: 0;
+	opacity: 0;
+}
+.nav-link:hover:before {
+	opacity: 1;
+}
+/* Navbar End*/
+
+/* Utils *************************************** Start */
+.card i {
+	font-size: 50px;
+}
+.row {
+	margin: 0 !important;
+}
+.container {
+	max-width: 1200px !important;
+}
+
+.overlay:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.9);
+	position: absolute;
+}
+
+.down-arrow {
+	width: 24px;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.py-6rem {
+	padding-top: 6rem;
+	padding-bottom: 6rem;
+}
+
+.pt-6rem {
+	padding-top: 6rem;
+}
+
+.mt-6rem {
+	margin-top: 6rem !important;
+}
+.mb-6rem {
+	margin-bottom: 6rem !important;
+}
+.my-6rem {
+	margin-top: 6rem !important;
+	margin-bottom: 6rem !important;
+}
+
+.border-left {
+	border-left-width: 5px !important;
+	padding-left: 15px;
+}
+
+.card,
+.card-wrapper {
+	flex-basis: 30.5% !important;
+}
+.card-img-top {
+	max-height: 250px;
+}
+
+.fab {
+	font-size: 24px;
+}
+
+/* Utils **************************************** End */
+
+/* Home Section ******************************** Start */
+.home .container {
+	height: 100vh !important;
+}
+.home {
+	background-image: url(assets/businessman-cellphones-cellular-telephone.jpg);
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-size: cover;
+}
+
+.profile-image {
+	background-image: url(assets/profile.png);
+	width: 12rem;
+	height: 12rem;
+	border-radius: 50%;
+	border: solid 5px #555555;
+}
+/* Home Section ************************************ End */
+
+/* About Section ******************************** Start */
+.about-image {
+	background-image: url(assets/boy.jpg);
+	width: 100%;
+	height: 500px;
+	transition: all 200ms ease;
+	position: relative;
+	left: 0;
+	bottom: 0;
+}
+/* About Section ******************************** End */
+
+/* Services Section ******************************** Start */
+.services .card {
+	transition: transform 300ms ease;
+}
+
+.services .card-wrapper:hover > .card {
+	transform: translateY(-10px);
+}
+/* Services Section ******************************** End */
+
+/* Portfolio Section **************************************** Start */
+.portfolio .img-1 {
+	background: url(assets/beautful-girl-with-shoping-bags.jpg);
+}
+.portfolio .img-2 {
+	background: url(assets/beverage-blur-close-up.jpg);
+}
+.portfolio .img-3 {
+	background: url(assets/businessman-cellphones-cellular-telephone.jpg);
+}
+.portfolio .img-4 {
+	background: url(assets/friends.jpg);
+}
+.portfolio .img-5 {
+	background: url(assets/abstract-painting.jpg);
+}
+.portfolio .img-6 {
+	background: url(assets/accessory-books-cases.jpg);
+}
+
+.portfolio .img {
+	width: 33.333%;
+	height: 300px;
+	position: relative;
+	cursor: pointer;
+}
+
+.filter-list-group li {
+	cursor: pointer;
+}
+
+.tooltip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	opacity: 0;
+	white-space: nowrap;
+	max-width: 150px;
+	overflow: visible !important;
+}
+
+.tooltip h4 {
+	color: #000000;
+}
+.tooltip span {
+	font-size: 0.8rem !important;
+	padding-top: 0 !important;
+}
+/* Portfolio Section **************************************** End */
+
+/* Testimonial Section ******************************** Start */
+.testimonial {
+	background-image: url(assets/beverage-blur-close-up.jpg);
+	width: 100%;
+	height: 500px;
+	position: relative;
+	background-attachment: fixed;
+}
+
+.testimonial .quote {
+	font-size: 50px;
+	transform: rotate(180deg);
+}
+/* Testimonial Section ******************************** End */
+
+/* Counter Section ******************************** Start */
+.counter h6 {
+	font-size: 2.8rem;
+}
+/* Counter Section ******************************** End */
+
+/* Blog Section **************************************** Start */
+
+.blog {
+	background: #eeeeee;
+}
+
+.popup-img {
+	height: 500px;
+}
+
+.blog-popup {
+	width: 100%;
+	height: 100vh !important;
+}
+/* Blog Section **************************************** End */
+
+/* Contact Section **************************************** Start */
+.input-field,
+.message {
+	border: 0;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.5);
+}
+
+.input-field {
+	flex-basis: 45%;
+}
+.message {
+	flex-basis: 100%;
+}
+
+.input-field:focus,
+.message:focus {
+	outline: none;
+	border-bottom-color: #17a2b8;
+	transition: 300ms ease;
+}
+
+/* Contact Section **************************************** End */
+
+/* Media  *************************************************** Start */
+
+/* Large Device Start */
+@media (max-width: 992px) {
+	.navbar {
+		background: #343a40 !important;
+	}
+	h1 {
+		font-size: 3rem !important;
+	}
+	h3 {
+		font-size: 1.4rem !important;
+	}
+	.card-wrapper,
+	.card {
+		flex-basis: 48% !important;
+	}
+	.portfolio .img {
+		width: 50%;
+	}
+
+	.border-right-md-0 {
+		border-right: 0 !important;
+	}
+	.contact .info {
+		margin-bottom: 6rem;
+	}
+	.container {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+/* Large Device Start */
+
+/* Medium Device Start */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2.5rem !important;
+	}
+
+	h2 {
+		font-size: 2rem !important;
+	}
+
+	h3 {
+		font-size: 1.1rem !important;
+	}
+
+	.main-sub {
+		font-size: 1rem;
+	}
+
+	.container {
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
+	}
+	.counter h6 {
+		font-size: 2.2rem;
+	}
+
+	.profile-image {
+		width: 10rem;
+		height: 10rem;
+	}
+
+	.portfolio li.mr-5 {
+		margin-right: 1rem !important;
+	}
+	.portfolio li {
+		line-height: 3;
+	}
+
+	.contact .info {
+		margin-bottom: initial;
+	}
+	.input-field.name {
+		margin-top: 6rem;
+		margin-bottom: 6rem;
+	}
+	.input-field {
+		flex-basis: 100%;
+	}
+
+	footer .icons {
+		margin-top: 1rem !important;
+	}
+
+	footer i {
+		font-size: 1.2rem !important;
+	}
+
+	.popup-img {
+		height: 300px;
+	}
+
+	.slick-arrow {
+		display: none !important;
+	}
+
+	.border-left {
+		border-left-width: 0 !important;
+		padding-left: 0;
+	}
+
+	.btn.mr-5 {
+		margin-right: 2 !important;
+	}
+
+	.btn {
+		font-size: 0.9rem;
+		padding: 0.5rem;
+	}
+	.card {
+		flex-basis: 100% !important;
+	}
+
+	.border-right {
+		border-right: 0 !important;
+	}
+}
+/* Medium Device End*/
+
+/* Small Device Start */
+@media (max-width: 464px) {
+	h1 {
+		font-size: 1.7rem !important;
+	}
+	h2 {
+		font-size: 1.5rem !important;
+	}
+	.home h3 {
+		font-size: 1rem !important;
+	}
+	.container {
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+	.card-wrapper,
+	.card {
+		flex-basis: 100% !important;
+	}
+	.portfolio .img {
+		width: 100%;
+	}
+}
+/* Small Device End */
+
+/* XS Device Start */
+
+@media (max-width: 320px) {
+	h1 {
+		font-size: 1.5rem !important;
+	}
+
+	h3,
+	h4 {
+		font-size: 1rem !important;
+	}
+	.profile-image {
+		width: 140px !important;
+		height: 140px !important;
+	}
+
+	.btn.mr-5 {
+		margin-right: 1rem !important;
+	}
+}
+/* XS Device Start */
+/* Media  *************************************************** Start */
